@@ -14,9 +14,23 @@ const { title } = Astro.props
       name='viewport'
       content='width=device-width'
     />
-    <meta name="description" content="The personal or portfolio website of Sergio Mendez. Sergio is a Software engineer">
-    
+    <meta
+      name='description'
+      content='The personal or portfolio website of Sergio Mendez. Sergio is a Software engineer'
+    />
 
+    <script
+      type='text/partytown'
+      src='https://www.googletagmanager.com/gtag/js?id=G-N9N3T24SGZ'
+    ></script>
+    <script type='text/partytown'>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+      gtag('config', 'G-N9N3T24SGZ')
+    </script>
 
     <link
       rel='icon'
