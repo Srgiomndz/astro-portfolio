@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Footer from '../components/footer.astro'
+import BulletPoints from '../components/BulletPoints.astro'
+import { Icon } from 'astro-icon'
+import Navbar from '../components/Navbar.astro'
+import Projects from '../components/Projects.astro'
+---
+
+<Layout title='sergio'>
+  <main>
+    <Navbar />
+    <!-- Intro section -->
+    <div
+      class='antialiased text-white flex flex-col max-w-lg mx-auto justify-center pb-24 px-4 space-y-4 h-screen'
+    >
+      <span class='md:text-9xl text-7xl font-bold text-center text-orange-100'
+        >Sergio</span
+      >
+      <p class='md:text-lg text-center'>
+        consectetur adipisicing elit. Corporis eius inventore, esse maiores modi
+        neque quo ut ipsum nesciunt. Ea cum quasi inventore.Lorem, ipsum dolor
+        sit amet consectetur adipisicing elit. Corporis eius inventore, esse
+        maiores modi neque quo ut ipsum nesciunt. Ea cum quasi inventoreLorem,
+        ipsum dolor sit amet consectetur adipisicing elit. Corporis eius
+        inventore, esse maiores modi neque quo ut ipsum nesciunt. Ea cum quasi
+        inventoreLorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Corporis eius inventore, esse maiores modi neque quo ut ipsum nesciunt.
+        Ea cum quasi inventore
+      </p>
+      <span class='md:text-9xl text-7xl font-bold text-orange-100 text-center'
+        >Mendez</span
+      >
+      <div class='flex space-x-4 mx-auto'>
+        <a aria-label="A link to sergio's Github" href="https://github.com/Srgiomndz"><Icon
+          class='w-14'
+          name='mdi:github'
+        /></a>
+        <a aria-label="A link to sergio's Linkedin" href="https://www.linkedin.com/in/srgiomndz/"><Icon
+          class='w-14'
+          name='mdi:linkedin'
+        /></a>
+        <!-- <a href=""><Icon
+          class='w-14'
+          name='mdi:twitter'
+        /></a> -->
+
+      
+
+
+
+
+      </div>
+    </div>
+
+    <Projects />
+
+    <BulletPoints />
+
+    <Footer />
+  </main>
+</Layout>
