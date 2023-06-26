@@ -19,19 +19,6 @@ const { title } = Astro.props
       content='The personal or portfolio website of Sergio Mendez. Sergio is a Software engineer'
     />
 
-    <script
-      type='text/partytown'
-      src='https://www.googletagmanager.com/gtag/js?id=G-N9N3T24SGZ'
-    ></script>
-    <script type='text/partytown'>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag('js', new Date())
-      gtag('config', 'G-N9N3T24SGZ')
-    </script>
-
     <link
       rel='icon'
       type='image/svg+xml'
@@ -60,27 +47,26 @@ const { title } = Astro.props
   }
 
   @font-face {
-  font-family: 'PPNeueMachina-InktrapUltrabold';
-  src: url('/fonts/PPNeueMachina-InktrapUltrabold.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+    font-family: 'PPNeueMachina-InktrapUltrabold';
+    src: url('/fonts/PPNeueMachina-InktrapUltrabold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
   @font-face {
-  font-family: 'PPNeueMachina-InktrapLight';
-  src: url('/fonts/PPNeueMachina-InktrapLight') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+    font-family: 'PPNeueMachina-InktrapLight';
+    src: url('/fonts/PPNeueMachina-InktrapLight') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
   @font-face {
-  font-family: 'PPNeueMachina-PlainRegular';
-  src: url('/fonts/PPNeueMachina-PlainRegular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
+    font-family: 'PPNeueMachina-PlainRegular';
+    src: url('/fonts/PPNeueMachina-PlainRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
 
   html {
     background-color: rgb(28, 28, 28);

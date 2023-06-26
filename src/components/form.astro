@@ -1,0 +1,98 @@
+---
+---
+
+<div class='flex items-center px-7 py-10  font-myfont1'>
+    <div class='container mx-auto'>
+        <div class='max-w-3xl mx-auto my-10 p-5'>
+            <div class='text-center'>
+                <h1 class='my-3 text-3xl text-white font-semibold'>Contact Me</h1>
+            </div>
+            <div class='m-7'>
+                <form
+                    action='https://api.web3forms.com/submit'
+                    method='POST'
+                    id='form'
+                >
+                    <input
+                        type='hidden'
+                        name='access_key'
+                        value='a3a18e0d-fe8d-4f9b-bcb0-26e9dbe9356d'
+                    />
+                    <input
+                        type='hidden'
+                        name='subject'
+                        value='New Submission from serrg.dev'
+                    />
+                    <input
+                        type='hidden'
+                        name='redirect'
+                        value='https://www.serrg.dev/'
+                    />
+                    <input
+                        type='checkbox'
+                        name='botcheck'
+                        id=''
+                        style='display: none;'
+                    />
+                    <div class='mb-6'>
+                        <label
+                            for='name'
+                            class='block mb-2 text-sm text-white'
+                            >Name</label
+                        >
+                        <input
+                            type='text'
+                            name='name'
+                            id='name'
+                            required
+                            class='w-full px-3 py-2 placeholder-gray-300 border border-gray-300 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300'
+                        />
+                    </div>
+                    <div class='mb-6'>
+                        <label
+                            for='email'
+                            class='block mb-2 text-sm text-white'
+                            >Email Address</label
+                        >
+                        <input
+                            type='email'
+                            name='email'
+                            id='email'
+                            required
+                            class='w-full px-3 py-2 placeholder-gray-300 border border-gray-300 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300'
+                        />
+                    </div>
+
+                    <div class='mb-6'>
+                        <label
+                            for='message'
+                            class='block mb-2 text-sm text-white'
+                            >Your Message</label
+                        >
+
+                        <textarea
+                            rows='5'
+                            name='message'
+                            id='message'
+                            class='w-full px-3 py-2 placeholder-gray-300 border border-gray-300 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300'
+                            required
+                        ></textarea>
+                    </div>
+                    <div class='mb-6'>
+                        <button
+                            type='submit'
+                            class='w-full border p-3 px-5 text-sm text-white hover:bg-white hover:text-black'
+                        >
+                            Send Message
+                        </button>
+                    </div>
+                    <p
+                        class='text-base text-center text-gray-400'
+                        id='result'
+                    >
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

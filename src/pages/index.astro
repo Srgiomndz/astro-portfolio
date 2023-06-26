@@ -5,6 +5,7 @@ import BulletPoints from '../components/BulletPoints.astro'
 import { Icon } from 'astro-icon'
 import Navbar from '../components/Navbar.astro'
 import Projects from '../components/Projects.astro'
+import Form from '../components/form.astro'
 ---
 
 <Layout title='sergio'>
@@ -17,38 +18,42 @@ import Projects from '../components/Projects.astro'
       <span class='text-7xl font-myfont1 text-center text-orange-100'
         >Sergio</span
       >
-      <p class='md:text-lg font-myfont3   '>
-        Hello! I am a creative web/fullstack developer who enjoys solving problems that make peoples lives easier. I am naturally curious and have a passion for working with others.
+      <p class='md:text-lg font-myfont3'>
+        Hello! I am a creative web/fullstack developer who enjoys solving
+        problems that make peoples lives easier. I am naturally curious and have
+        a passion for working with others.
       </p>
-      <span class=' text-7xl font-myfont1 text-orange-100 text-center'
+      <span class='text-7xl font-myfont1 text-orange-100 text-center'
         >Mendez</span
       >
       <div class='flex space-x-4 mx-auto'>
-        <a aria-label="A link to sergio's Github" href="https://github.com/Srgiomndz"><Icon
-          class='w-14'
-          name='mdi:github'
-        /></a>
-        <a aria-label="A link to sergio's Linkedin" href="https://www.linkedin.com/in/srgiomndz/"><Icon
-          class='w-14'
-          name='mdi:linkedin'
-        /></a>
+        <a
+          aria-label="A link to sergio's Github"
+          href='https://github.com/Srgiomndz'
+          ><Icon
+            class='w-14'
+            name='mdi:github'
+          /></a
+        >
+        <a
+          aria-label="A link to sergio's Linkedin"
+          href='https://www.linkedin.com/in/srgiomndz/'
+          ><Icon
+            class='w-14'
+            name='mdi:linkedin'
+          /></a
+        >
         <!-- <a href=""><Icon
           class='w-14'
           name='mdi:twitter'
         /></a> -->
-
-      
-
-
-
-
       </div>
     </div>
 
     <Projects />
 
     <BulletPoints />
-
+    <Form />
     <Footer />
   </main>
 </Layout>
