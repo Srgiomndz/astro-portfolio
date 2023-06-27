@@ -1,0 +1,46 @@
+---
+import { Icon } from 'astro-icon'
+import 'animate.css'
+
+
+---
+
+<div
+  class='antialiased text-white flex flex-col max-w-lg mx-auto justify-center pb-24 px-4 space-y-4 h-screen'
+>
+  <span
+    class='text-7xl font-myfont1 text-center text-orange-100 animate__animated animate__fadeInLeft '
+    >Sergio</span
+  >
+  <p class='md:text-lg font-myfont3 animate__animated animate__fadeIn'>
+    Hello! I am a creative web/fullstack developer who enjoys solving problems
+    that make peoples lives easier. I am naturally curious and have a passion
+    for working with others.
+  </p>
+  <span
+    class='text-7xl font-myfont1 overflow-hidden text-orange-100 text-center animate__animated animate__fadeInRight'
+    >Mendez</span
+  >
+  <div class='flex space-x-4 mx-auto animate__animated animate__fadeIn animate__delay-1s '>
+    <a
+      aria-label="A link to sergio's Github"
+      href='https://github.com/Srgiomndz'
+      ><Icon
+        class='w-14'
+        name='mdi:github'
+      /></a
+    >
+    <a
+      aria-label="A link to sergio's Linkedin"
+      href='https://www.linkedin.com/in/srgiomndz/'
+      ><Icon
+        class='w-14'
+        name='mdi:linkedin'
+      /></a
+    >
+    <!-- <a href=""><Icon
+          class='w-14'
+          name='mdi:twitter'
+        /></a> -->
+  </div>
+</div>

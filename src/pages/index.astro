@@ -1,53 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Footer from '../components/footer.astro'
-import BulletPoints from '../components/BulletPoints.astro'
+import BulletPoints from '../components/bulletpoints.astro'
 import { Icon } from 'astro-icon'
 import Navbar from '../components/Navbar.astro'
 import Projects from '../components/Projects.astro'
+import Intro from '../components/intro.astro'
 ---
 
 <Layout title='sergio'>
   <main>
     <Navbar />
     <!-- Intro section -->
-    <div
-      class='antialiased text-white flex flex-col max-w-lg mx-auto justify-center pb-24 px-4 space-y-4 h-screen'
-    >
-      <span class='text-7xl font-myfont1 text-center text-orange-100'
-        >Sergio</span
-      >
-      <p class='md:text-lg font-myfont3'>
-        Hello! I am a creative web/fullstack developer who enjoys solving
-        problems that make peoples lives easier. I am naturally curious and have
-        a passion for working with others.
-      </p>
-      <span class='text-7xl font-myfont1 text-orange-100 text-center'
-        >Mendez</span
-      >
-      <div class='flex space-x-4 mx-auto'>
-        <a
-          aria-label="A link to sergio's Github"
-          href='https://github.com/Srgiomndz'
-          ><Icon
-            class='w-14'
-            name='mdi:github'
-          /></a
-        >
-        <a
-          aria-label="A link to sergio's Linkedin"
-          href='https://www.linkedin.com/in/srgiomndz/'
-          ><Icon
-            class='w-14'
-            name='mdi:linkedin'
-          /></a
-        >
-        <!-- <a href=""><Icon
-          class='w-14'
-          name='mdi:twitter'
-        /></a> -->
-      </div>
-    </div>
+    <Intro/>  
 
     <Projects />
 
@@ -56,3 +21,27 @@ import Projects from '../components/Projects.astro'
     <Footer />
   </main>
 </Layout>
+
+
+<script>
+  // Get all elements with the class "inView"
+const elements = document.querySelectorAll('.inView');
+
+// Create a callback function to handle intersection changes
+const callback = (entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Add the class "animate__animated" when element is in view
+      entry.target.classList.add('animate__animated');
+    }
+  });
+};
+
+// Create an Intersection Observer instance with the callback function
+const observer = new IntersectionObserver(callback);
+
+// Observe each element with the class "inView"
+elements.forEach(element => {
+  observer.observe(element);
+});
+</script>
