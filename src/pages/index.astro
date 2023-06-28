@@ -22,26 +22,3 @@ import Intro from '../components/intro.astro'
   </main>
 </Layout>
 
-
-<script>
-  // Get all elements with the class "inView"
-const elements = document.querySelectorAll('.inView');
-
-// Create a callback function to handle intersection changes
-const callback = (entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      // Add the class "animate__animated" when element is in view
-      entry.target.classList.add('animate__animated');
-    }
-  });
-};
-
-// Create an Intersection Observer instance with the callback function
-const observer = new IntersectionObserver(callback);
-
-// Observe each element with the class "inView"
-elements.forEach(element => {
-  observer.observe(element);
-});
-</script>
